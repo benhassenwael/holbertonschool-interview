@@ -13,6 +13,9 @@ def rain(walls):
         If there are no larger walls to the right then start
         from the left. There must be a larger wall to the left now
     """
+    if not walls:
+        return 0
+
     size = len(walls) - 1
 
     prev = walls[0]
